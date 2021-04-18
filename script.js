@@ -47,6 +47,14 @@ let formatDate = (date) => {
   return `${months[month]} ${day}, ${year}`
 }
 
+let toggle24 = () => {
+  if (twentyFourHour) {
+    twentyFourHour = false;
+  } else {
+    twentyFourHour = true;
+  }
+}
+
 setInterval(() => {
   let now = new Date();
   let [hour, minute] = [now.getHours(), now.getMinutes()]

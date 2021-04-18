@@ -23,6 +23,15 @@ body {
   height: 99vh;
 }
 
+button {
+  border: 0px;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 768px) {
   #infoWrapper {
     text-align: center;
