@@ -37,10 +37,21 @@ let setBackground = (hour) => {
   document.body.style.backgroundColor = bgColor;
 }
 
+let formatDate = (date) => {
+  let month = date.getMonth();
+  let months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  
+  let day = date.getDate();
+  let year = date.getFullYear();
+
+  return `${months[month]} ${day}, ${year}`
+}
+
 setInterval(() => {
   let now = new Date();
   let [hour, minute] = [now.getHours(), now.getMinutes()]
   setBackground(hour);
+  dateElement.innerHTML = formatDate(now);
 
   if (twentyFourHour) { // Render 24 hour time
     timeElement.innerHTML = format24Time(hour, minute)
