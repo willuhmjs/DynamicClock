@@ -3,3 +3,5 @@ A clock that dynamically changes theme based on the time. Background color chang
 
 ## License
 **DynamicClock** is licensed under the [MIT License](https://github.com/willuhm-js/DynamicClock/blob/master/LICENSE)
+
+## Gallery
