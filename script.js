@@ -67,4 +67,4 @@ setInterval(() => {
     timeElement.innerHTML = format12Time(hour, minute)
   }
   
-}, 500)
+}, 250)
