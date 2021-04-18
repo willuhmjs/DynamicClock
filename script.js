@@ -1,5 +1,6 @@
 let timeElement = document.getElementById("time");
 let dateElement = document.getElementById("date");
+let twentyFourHour = false;
 
 let format24Time = (hour, minute) => {
   if (hour.toString().length == 1) hour = "0"+hour;
@@ -35,3 +36,16 @@ let setBackground = (hour) => {
 
   document.body.style.backgroundColor = bgColor;
 }
+
+setInterval(() => {
+  let now = new Date();
+  let [hour, minute] = [now.getHours(), now.getMinutes()]
+  setBackground(hour);
+
+  if (twentyFourHour) { // Render 24 hour time
+    timeElement.innerHTML = format24Time(hour, minute)
+  } else {
+    timeElement.innerHTML = format12Time(hour, minute)
+  }
+  
+}, 500)
