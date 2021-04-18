@@ -10,6 +10,7 @@ body {
 
 #time {
   font-size: 7rem;
+  margin: 0;
 }
 
 #date {
