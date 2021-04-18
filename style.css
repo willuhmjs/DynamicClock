@@ -21,6 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 99vh;
+  text-align: center;
 }
 
 button {
@@ -30,10 +31,4 @@ button {
 
 button:focus {
   outline: none;
-}
-
-@media only screen and (max-width: 768px) {
-  #infoWrapper {
-    text-align: center;
-  }
 }
