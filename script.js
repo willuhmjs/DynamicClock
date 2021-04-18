@@ -17,3 +17,21 @@ let format12Time = (hour, minute) => {
   if (minute.toString().length == 1) minute = "0"+minute;
   return `${hour}:${minute} ${suffix}`;
 }
+
+let setBackground = (hour) => {
+  let bgColor = "";
+  if (hour >= 6 && hour <= 9) {
+    // Morning
+    bgColor = "#FFAA00"
+  } else if (hour >= 10 && hour <= 17) {
+    // Day
+    bgColor = "#87CEEB"
+  } else if (hour >= 18 && hour <= 20) {
+    // Evening
+    bgColor = "#FF9A00"
+  } else {
+    bgColor = "#15181A"
+  }
+
+  document.body.style.backgroundColor = bgColor;
+}
