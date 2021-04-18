@@ -22,3 +22,9 @@ body {
   justify-content: center;
   height: 99vh;
 }
+
+@media only screen and (max-width: 768px) {
+  #infoWrapper {
+    text-align: center;
+  }
+}
