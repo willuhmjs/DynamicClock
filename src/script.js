@@ -23,15 +23,15 @@ let setBackground = (hour) => {
   let bgColor = "";
   if (hour >= 6 && hour <= 9) {
     // Morning
-    bgColor = "#FFAA00"
+    bgColor = colors.morning
   } else if (hour >= 10 && hour <= 17) {
     // Day
-    bgColor = "#87CEEB"
+    bgColor = colors.day
   } else if (hour >= 18 && hour <= 20) {
     // Evening
-    bgColor = "#FF9A00"
+    bgColor = colors.evening
   } else {
-    bgColor = "#15181A"
+    bgColor = colors.night
   }
 
   document.body.style.backgroundColor = bgColor;
