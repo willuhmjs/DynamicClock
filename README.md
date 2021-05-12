@@ -4,12 +4,12 @@ A clock that dynamically changes theme based on the time. Background color chang
 ## Configuration
 See src/config.js for parameters.
 
-## License
-**DynamicClock** is licensed under the [MIT License](https://github.com/willuhm-js/DynamicClock/blob/master/LICENSE)
-
 ## Gallery
 ![Morning](gallery/morning.png)
 ![Day](gallery/day.png)
 ![Evening](gallery/evening.png)
 ![Night](gallery/night.png)
 ![24hour](gallery/24hr.png)
+
+## License
+**DynamicClock** is licensed under the [MIT License](https://github.com/willuhm-js/DynamicClock/blob/master/LICENSE)
